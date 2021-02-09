@@ -1,1 +1,3 @@
-console.log("TypeScript Setup complete")
+console.log("")
+console.log("index.ts loaded")
+console.log("")
