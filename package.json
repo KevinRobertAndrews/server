@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:build": "tsc -w",
-    "start:run": "nodemon build/index.js",
-    "start": "concurrently npm:start:*"
+    "tsc": "tsc -w",
+    "nodemon": "nodemon build/index.js",
+    "start": "concurrently -p \"[{name}]\" -n \"tsc,nodemon\" -c \"yellow.bgBlue,blue.bgYellow\" \"npm run tsc\" \"npm run nodemon\""
   },
   "keywords": [],
   "author": "Kevin Robert Andrews <kevinrobertandrews@gmail.com>",
