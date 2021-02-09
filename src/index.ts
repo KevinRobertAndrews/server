@@ -1,3 +1,3 @@
-console.log("")
-console.log("index.ts loaded")
-console.log("")
+import express from 'express';
+
+const app = express();
